@@ -1,0 +1,29 @@
+### API 1: Get all players
+GET http://localhost:3000/players/
+
+### API 2: Create a new player
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Vishal",
+  "jerseyNumber": 10,
+  "role": "Batsman"
+}
+
+### API 3: Get a player by player ID
+GET http://localhost:3000/players/1
+
+### API 4: Update a player by player ID
+PUT http://localhost:3000/players/1
+Content-Type: application/json
+
+{
+  "playerName": "Maneesh",
+  "jerseyNumber": 11,
+  "role": "All-Rounder"
+}
+
+### API 5: Delete a player by player ID
+DELETE http://localhost:3000/players/1
+
